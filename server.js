@@ -31,7 +31,7 @@ const SHOW_REASONING = String(process.env.SHOW_REASONING ?? 'true').toLowerCase(
 // THINKING controls whether thinking/reasoning parameters are SENT to NIM.
 // Defaults to true per GLM/Kimi/Qwen docs. Set THINKING=false to disable.
 const THINKING_ENABLED = String(
-  process.env.THINKING ?? process.env.ENABLE_THINKING_MODE ?? 'true'
+  process.env.THINKING ?? process.env.ENABLE_THINKING_MODE ?? 'false'
 ).toLowerCase() !== 'false';
 // Optional override for GLM-style `reasoning_effort` (low|high|max).
 // Empty = auto (max for glm family, otherwise omit).
